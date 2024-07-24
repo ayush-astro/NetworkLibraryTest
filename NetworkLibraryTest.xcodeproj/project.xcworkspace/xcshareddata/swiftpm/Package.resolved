@@ -1,0 +1,15 @@
+{
+  "originHash" : "b63526e4f374500578ebfae374d8ed3f121936e82b1ac26eacd193ba16f031be",
+  "pins" : [
+    {
+      "identity" : "networklibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Astrotalk-Libraries/NetworkLibrary",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0dcec2e9cf7da41f0416542c02f76bf3ad55f53e"
+      }
+    }
+  ],
+  "version" : 3
+}

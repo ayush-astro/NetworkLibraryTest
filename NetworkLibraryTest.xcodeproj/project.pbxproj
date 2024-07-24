@@ -13,6 +13,7 @@
 		12D75C092C510615009F1380 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 12D75C082C510615009F1380 /* Base */; };
 		12D75C0B2C51061B009F1380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D75C0A2C51061B009F1380 /* Assets.xcassets */; };
 		12D75C0E2C51061B009F1380 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 12D75C0D2C51061B009F1380 /* Base */; };
+		12D75C172C51062C009F1380 /* NetworkServiceLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 12D75C162C51062C009F1380 /* NetworkServiceLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D75C172C51062C009F1380 /* NetworkServiceLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NetworkLibraryTest;
+			packageProductDependencies = (
+				12D75C162C51062C009F1380 /* NetworkServiceLibrary */,
+			);
 			productName = NetworkLibraryTest;
 			productReference = 12D75BFE2C510615009F1380 /* NetworkLibraryTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 12D75BF52C510615009F1380;
+			packageReferences = (
+				12D75C152C51062C009F1380 /* XCRemoteSwiftPackageReference "NetworkLibrary" */,
+			);
 			productRefGroup = 12D75BFF2C510615009F1380 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12D75C152C51062C009F1380 /* XCRemoteSwiftPackageReference "NetworkLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Astrotalk-Libraries/NetworkLibrary";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12D75C162C51062C009F1380 /* NetworkServiceLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12D75C152C51062C009F1380 /* XCRemoteSwiftPackageReference "NetworkLibrary" */;
+			productName = NetworkServiceLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12D75BF62C510615009F1380 /* Project object */;
 }
